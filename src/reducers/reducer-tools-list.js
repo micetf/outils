@@ -25,7 +25,7 @@ export default function(state = null, action) {
         keywords: ['addi-grilles', 'calcul', 'maths', 'mathématique']
     }, {
         title: 'Additions',
-        url: 'additions',
+        url: 'addition',
         description: `Application web permettant de s'exercer au calcul de sommes d'entiers inférieurs à 10.`,
         image: 'additions.png',
         keywords: ['additions', 'calcul', 'maths', 'mathématique', 'opération']
@@ -299,6 +299,12 @@ export default function(state = null, action) {
         description: `Application web (Deuxième Version) permettant la fusion de plusieurs petits livres interactifs créés avec Didapages.`,
         image: 'edidafusion.png',
         keywords: ['didapages', 'livres', 'numériques', 'fusion', 'tuic']
+    }, {
+        title: 'Ecrans pour iPad (Générateur)',
+        url: 'ecrans-ipad',
+        description: `Générer des fonds d'écrans (écran verrouillé et/ou écran d'accueil) pour identifier les différentes tablettes de la classe.`,
+        image: 'ecrans-ipad.png',
+        keywords: ['générateur', 'écran', 'fond', 'ipad', 'iPad', 'tablettes', 'astuce']
     }, {
         title: 'Embouteillages en GS de maternelle',
         url: 'Embouteillages',

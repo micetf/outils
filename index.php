@@ -34,7 +34,7 @@
     </nav>
     <div class="container" id="app"></div>
   </body>
-  <script src="./bundle.js?v=201703200920"></script>
+  <script src="./bundle.js?t=<?php echo time(); ?>"></script>
   <script src="../js-micetf/paypal.js"></script>
   <script src="../js-micetf/contact.js"></script>
 </html>

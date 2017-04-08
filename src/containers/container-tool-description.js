@@ -18,7 +18,7 @@ class ToolDescription extends Component {
           </div>
           <div className="panel-body">
             <a href={'https://micetf.fr/' + this.props.tool.url} target="_blank">
-              <img src={'images/' + this.props.tool.image} alt={this.props.tool.image} className="img-responsive" />
+              <img src={'../images-micetf/' + this.props.tool.image} alt={this.props.tool.image} className="img-responsive" />
             </a>
           </div>
           <div className="panel-footer text-justify">
