@@ -1,5 +1,6 @@
 body {
   padding-top: 70px;
+  background-color: #f5f3ee;
 }
 
 .search-bar {
@@ -12,7 +13,9 @@ body {
   border-radius: 20px;
 }
 
-
+.search-bar input:after {
+    content: 'x';
+}
 .list-group-item {
   cursor: pointer;
 }

@@ -8,7 +8,7 @@
     <meta name="keywords" content="recherche, mots clés, application web, micetf, outils, classe" />
     <meta name="author" content="Frédéric MISERY - Version du 04/03/2017" />
     <link rel="stylesheet" href="../css-vendor/bootstrap.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css?t=<php echo time(); ?>">
   </head>
   <body>
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
