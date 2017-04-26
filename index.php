@@ -8,7 +8,8 @@
     <meta name="keywords" content="recherche, mots clés, application web, micetf, outils, classe" />
     <meta name="author" content="Frédéric MISERY - Version du 04/03/2017" />
     <link rel="stylesheet" href="../css-vendor/bootstrap.css">
-    <link rel="stylesheet" href="./css/style.css?t=<php echo time(); ?>">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" type="image/png" href="../img-micetf/logo.png">
   </head>
   <body>
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -34,7 +35,7 @@
     </nav>
     <div class="container" id="app"></div>
   </body>
-  <script src="./bundle.js?t=<?php echo time(); ?>"></script>
+  <script src="./bundle.js"></script>
   <script src="../js-micetf/paypal.js"></script>
   <script src="../js-micetf/contact.js"></script>
 </html>

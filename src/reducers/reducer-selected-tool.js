@@ -5,6 +5,5 @@ export default function(state = null, action) {
     case types.SELECT_TOOL:
       return action.payload;
   }
-
   return state;
 }
