@@ -867,9 +867,15 @@ Le jeu est multijoueurs et peut donner lieu à un défi en ligne entre élèves 
     }, {
         title: 'Symbole Commun (Générateur)',
         url: 'symbole-commun',
-        description: ` Application web permettant de chercher en ligne le symbole commun entre deux cartes mais surtout de générer et imprimer des jeux de cartes personnalisés en utilisant ses propres images. Cet outil est très intéressant pour travailler le langage avec des élèves de cycle 1.`,
+        description: `Application web permettant de chercher en ligne le symbole commun entre deux cartes mais surtout de générer et imprimer des jeux de cartes personnalisés en utilisant ses propres images. Cet outil est très intéressant pour travailler le langage avec des élèves de cycle 1.`,
         image: 'symbole-commun.png',
         keywords: ['dobble', 'symbole', 'langage','jeu', 'cartes', 'générateur']
+    }, {
+        title: 'Superpositions',
+        url: 'superpositions',
+        description: `Travail de géométrie sur les différents plans, reconnaître des figures superposées, décrire une figure en superposant les formes, dictées, au cycle2`,
+        image: 'superpositions.png',
+        keywords: ['géométrie', 'mathématiques', 'superpositions', 'figures', 'plans']
     }, {
         title: 'Tables d\'addition',
         url: 'TablesAddition',
