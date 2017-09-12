@@ -624,6 +624,12 @@ export default function(state = null, action) {
         image: 'operations.png',
         keywords: ['opérations', 'calcul', 'posé', 'maths', 'mathématiques', 'générateur']
     }, {
+        title: 'Ordonner des nombres',
+        url: 'ordonner',
+        description: `Application web permettant aux élèves de s'entraîner/évaluer au classement des nombres dans l'ordre croissant/décroissant.`,
+        image: 'ordonner.png',
+        keywords: ['ordonner', 'ordre', 'ranger', 'croissant', 'décroissant', 'maths', 'mathématiques', 'numération']
+    }, {
         title: 'Ordre alphabétique - La ruche des mots',
         url: 'ordre-alpha',
         description: `Application web permettant de mémoriser l'orthographe lexicale des mots. L'enseignant peut s'incrire et gérer les listes de mots proposées à ses élèves.`,
