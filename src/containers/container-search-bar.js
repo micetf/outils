@@ -1,28 +1,26 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
+import React from "react";
+import { connect } from "react-redux";
+import { bindActionCreators } from "redux";
+import PropTypes from "prop-types";
 
-import { filterTools } from '../actions/';
+import { filterTools } from "../actions/";
 
-class SearchBar extends Component {
+const SearchBar = props => (
+  <div className="search-bar">
+    <input
+      type="search"
+      className="form-control"
+      placeholder="Mot-clé pour filtrer les applications"
+      onChange={event => props.filterTools(event.target.value)}
+    />
+  </div>
+);
 
-  render() {
-    return (
-      <div className="search-bar">
-        <input
-          autoFocus
-          type="search"
-          className="form-control"
-          placeholder='Mot-clé pour filtrer les applications'
-          onChange={event => this.props.filterTools(event.target.value)} />
-      </div>
-    );
-  }
+SearchBar.propTypes = {
+  filterTools: PropTypes.func.isRequired,
+};
 
-}
-
-const mapDispatchToProps = dispatch => {
-  return bindActionCreators({ filterTools: filterTools }, dispatch);
-}
+const mapDispatchToProps = dispatch =>
+  bindActionCreators({ filterTools }, dispatch);
 
 export default connect(null, mapDispatchToProps)(SearchBar);

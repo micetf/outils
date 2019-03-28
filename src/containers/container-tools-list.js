@@ -1,13 +1,15 @@
-import React, { Component } from 'react';
-import Tooltip from 'react-tooltip-component';
-import { connect } from 'react-redux';
-import { bindActionCreators } from 'redux';
+/* eslint jsx-a11y/href-no-hash: 0 */
 
-import { selectTool } from '../actions/';
-import SearchBar from './container-search-bar.js';
+import React, { Component } from "react";
+import Tooltip from "react-tooltip-component";
+import { connect } from "react-redux";
+import { bindActionCreators } from "redux";
+import PropTypes from "prop-types";
+
+import { selectTool } from "../actions/";
+import SearchBar from "./container-search-bar";
 
 class ToolsList extends Component {
-
   constructor(props) {
     super(props);
     props.selectTool(props.tools[0]);
@@ -18,7 +20,7 @@ class ToolsList extends Component {
     return this.props.tools.filter(tool => {
       const keywords = tool.keywords;
       return keywords.reduce((ok, keyword) => {
-        return ok || keyword.indexOf(term) === 0
+        return ok || keyword.indexOf(term) === 0;
       }, false);
     });
   }
@@ -28,16 +30,17 @@ class ToolsList extends Component {
       return (
         <Tooltip
           key={tool.url}
-          title={tool.keywords.join(', ')}
-          position='left'>
-          <li
-            onClick={() => this.props.selectTool(tool)}
-            className="list-group-item">
+          title={tool.keywords.join(", ")}
+          position="left"
+        >
+          <li className="list-group-item">
+            <a onClick={() => this.props.selectTool(tool)} href="#">
               {tool.title}
+            </a>
           </li>
         </Tooltip>
-      )
-    })
+      );
+    });
   }
   render() {
     const tools = this.filterList();
@@ -48,28 +51,29 @@ class ToolsList extends Component {
           <div className="panel-heading text-center">
             <SearchBar />
             <h4>
-              Nombre d'outils : <span className="badge">{tools.length}</span>
+              {`Nombre d'outils : `}
+              <span className="badge">{tools.length}</span>
             </h4>
           </div>
-          <ul className="list-group panel-body">
-            {this.renderList(tools)}
-          </ul>
+          <ul className="list-group panel-body">{this.renderList(tools)}</ul>
         </div>
       </div>
     );
   }
 }
 
-const mapStateToProps = state => {
-  return {
-    tools: state.toolsList,
-    term: state.searchTerm
-  }
-}
+ToolsList.propTypes = {
+  tools: PropTypes.arrayOf(PropTypes.shape()).isRequired,
+  term: PropTypes.string.isRequired,
+  selectTool: PropTypes.func.isRequired,
+};
 
-const mapDispatchToProps = dispatch => {
-  return bindActionCreators({ selectTool: selectTool }, dispatch);
-}
+const mapStateToProps = state => ({
+  tools: state.toolsList,
+  term: state.searchTerm,
+});
+
+const mapDispatchToProps = dispatch =>
+  bindActionCreators({ selectTool }, dispatch);
 
 export default connect(mapStateToProps, mapDispatchToProps)(ToolsList);
-
