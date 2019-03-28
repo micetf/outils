@@ -1,0 +1,36 @@
+// Fix Icon Font Path 
+$icon-font-path: '~@neos21/bootstrap3-glyphicons/assets/fonts/';
+// Import This 
+@import '~@neos21/bootstrap3-glyphicons';
+
+body {
+    padding-top: 70px;
+    background-color: #f5f3ee;
+}
+
+.search-bar {
+    margin: 20px;
+    text-align: center;
+}
+
+.search-bar input {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.search-bar input:after {
+    content: 'x';
+}
+
+.list-group-item {
+    cursor: pointer;
+}
+
+.list-group-item:hover {
+    background-color: #eee;
+}
+
+ul.list-tools {
+    overflow: auto;
+    height: calc(11*40px);
+}
