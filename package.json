@@ -3,16 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@neos21/bootstrap3-glyphicons": "^1.0.2",
-    "bootstrap": "^4.3.1",
-    "node-sass": "^4.11.0",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
+    "@neos21/bootstrap3-glyphicons": "^1.0.4",
+    "bootstrap": "^4.4.1",
+    "node-sass": "^4.14.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
     "react-redux": "^6.0.1",
     "react-scripts": "2.1.8",
     "react-tooltip-component": "^0.3.0",
     "react-tooltip-component-16": "^0.3.2",
-    "redux": "^4.0.1"
+    "redux": "^4.0.5"
   },
   "scripts": {
     "start": "react-scripts start",
