@@ -627,6 +627,20 @@ export default () => [
         keywords: ["flipflap", "arts", "images"],
     },
     {
+        title: "Fluence de lecture",
+        url: "fluence",
+        description: `Application web permettant de générer ses propres fiches de fluence de lecture. 3 formats de fiches sont proposés : des fiches de test, des fiches d'entraînement cycle 2 et des fiches d'entraînement cycle 3.`,
+        image: "fluence.png",
+        keywords: [
+            "fluence",
+            "lecture",
+            "générateur",
+            "test",
+            "ntraînement",
+            "français",
+        ],
+    },
+    {
         title: "Fractions",
         url: "Fractions",
         description: `Banque d'outils pour travailler les fractions à l'école primaire (exercices, générateur, ...).`,
@@ -1125,7 +1139,8 @@ export default () => [
     {
         title: "Numération-Opération",
         url: "numop",
-        description: `Application web permettant de travailler la numération et les opérations en manipulant les représentations les plus utilisées à l'école primaire.`,
+        description: `Application web permettant de travailler la numération et les opérations en manipulant les représentations les plus utilisées à l'école primaire.
+Pour utiliser une palette de couleurs différente pour la repésentation en cubes, ajouter #M[0000FF]C[00FF00]D[FFFF00]U[FF0000] à l'adresse de la page. Une valeur entre crochets correspond à la notation hexadécimale de la couleur souhaitée.`,
         image: "numop.png",
         keywords: [
             "numop",
@@ -1258,6 +1273,13 @@ export default () => [
         keywords: ["parcours de phrases", "français", "orthographe"],
     },
     {
+        title: "Pareil, pas pareil ?",
+        url: "pareil-pas-pareil",
+        description: `Jeu interactif permettant de s'exercer, d'une part, à reconnaître si deux formes planes sont superposables ou non et, d'autre part, à distinguer entre superposition directe et superposition après retournement. `,
+        image: "pareil-pas-pareil.png",
+        keywords: ["pareil", "géométrie", "math", "superposable", "forme"],
+    },
+    {
         title: "Parking",
         url: "parking",
         description: `Version mobile du jeu interactif Embouteillages et qui reprend l'activité du même nom proposée par D. Valentin pour les GS.`,
@@ -1333,6 +1355,19 @@ export default () => [
             "chinois",
             "fabrique",
             "français",
+        ],
+    },
+    {
+        title: "Polyèdres",
+        url: "polyedres",
+        description: `Banque de vidéos présentant des polyèdres en rotation autour des 3 axes de l'espace.`,
+        image: "polyedres.png",
+        keywords: [
+            "polyedres",
+            "géométrie",
+            "solide",
+            "maths",
+            "mathématiques",
         ],
     },
     {
