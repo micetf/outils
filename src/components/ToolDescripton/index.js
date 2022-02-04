@@ -6,7 +6,6 @@ const ToolDescription = (props) => {
 
     const handleCopy = (e) => {
         e.preventDefault();
-        console.log(embed.current.textContent);
         navigator.clipboard.writeText(embed.current.textContent);
     };
     if (!props.tool) {
@@ -17,10 +16,10 @@ const ToolDescription = (props) => {
             </h3>
         );
     }
-    const embeded = (yrl) => (
+    const embeded = (url) => (
         <code className="clearfix" ref={embed} title="Code d'intégration">
-            &lt;iframe src={`https://micetf.fr/${url}`} width="980" height="735"
-            frameborder="0" &gt;&lt;/iframe&gt;
+            &lt;iframe src="{`https://micetf.fr/${url}`}" width="980"
+            height="735" frameborder="0" &gt;&lt;/iframe&gt;
         </code>
     );
     const { title, url, image, description } = props.tool;
