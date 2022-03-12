@@ -1234,6 +1234,22 @@ Pour utiliser une palette de couleurs différente pour la repésentation en cube
         ],
     },
     {
+        title: "Ordonner des nombres",
+        url: "ordonombres",
+        description: `Cette application web permet aux élèves de s'entraîner/évaluer au classement des nombres dans l'ordre croissant/décroissant.`,
+        image: "ordonombres.png",
+        keywords: [
+            "ordonner",
+            "ordre",
+            "ranger",
+            "croissant",
+            "décroissant",
+            "math",
+            "mathématique",
+            "numération",
+        ],
+    },
+    {
         title: "Ordre alphabétique - La ruche des mots",
         url: "ordre-alpha",
         description: `Application web permettant de mémoriser l'orthographe lexicale des mots. L'enseignant peut s'incrire et gérer les listes de mots proposées à ses élèves.`,
