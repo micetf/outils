@@ -563,6 +563,21 @@ export default () => [
         ],
     },
     {
+        title: "Estim'heure",
+        url: "estimheure",
+        description: `Cette application permet aux élèves d'entretenir leur capacité à estimer l'heure entière la plus proche d'une heure donnée.`,
+        image: "estimheure.png",
+        keywords: [
+            "estimation",
+            "math",
+            "mathématique",
+            "heure",
+            "minute",
+            "grandeur",
+            "mesure",
+        ],
+    },
+    {
         title: "Etiquettes",
         url: "Etiquettes",
         description: `Application web permettant, à partir d'une série de mots, de générer des étiquettes au format image archivées un dossier.`,
