@@ -1638,6 +1638,23 @@ Le jeu est multijoueurs et peut donner lieu à un défi en ligne entre élèves 
         keywords: ["sig", "géographie", "carte"],
     },
     {
+        title: "Soixante",
+        url: "soixante",
+        description: `Cette application web permet aux élèves d'entretenir leur capacité à calculer autour du
+        nombre 60 (secondes, minutes ?)`,
+        image: "soixante.png",
+        keywords: [
+            "soixante",
+            "math",
+            "mathématique",
+            "calcul",
+            "mental",
+            "heure",
+            "minute",
+            "60",
+        ],
+    },
+    {
         title: "Souris - Les rois de la souris",
         url: "souris",
         description: `Jeu interactif permettant de s'exercer au maniement de la souris.`,
