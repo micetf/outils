@@ -1234,7 +1234,7 @@ Pour utiliser une palette de couleurs différente pour la repésentation en cube
         ],
     },
     {
-        title: "Ordo'Nombres'",
+        title: "Ordo'Nombres",
         url: "ordonombres",
         description: `Cette application web permet aux élèves de s'entraîner/évaluer au classement des nombres dans l'ordre croissant/décroissant.`,
         image: "ordonombres.png",
