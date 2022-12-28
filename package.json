@@ -1,7 +1,8 @@
 {
     "name": "outils-v2",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "private": true,
+    "homepage": ".",
     "dependencies": {
         "@neos21/bootstrap3-glyphicons": "^1.0.7",
         "@reduxjs/toolkit": "^1.8.1",
