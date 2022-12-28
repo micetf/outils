@@ -1,4 +1,4 @@
-export default () => [
+const tools = () => [
     {
         title: "Abaque",
         url: "abaque",
@@ -35,6 +35,19 @@ export default () => [
         description: `Application web permettant de s'exercer au calcul de sommes d'entiers inférieurs à 10.`,
         image: "additions.png",
         keywords: ["additions", "calcul", "maths", "mathématique", "opération"],
+    },
+    {
+        title: "Agamographe",
+        url: "agamographe",
+        description: `Application web permettant de générer des agamographes. Deux images sont découpées en bandes verticales placées alternativement pour former une image composite. Cette dernière, pliée en accordéon permet de révéler séparément les deux dessins selon l’angle sous lequel on regarde la feuille.`,
+        image: "agamographe.png",
+        keywords: [
+            "agamographe",
+            "dessin",
+            "art",
+            "Yaacov Agam",
+            "Yaacov Gipshtein",
+        ],
     },
     {
         title: "Alphabet",
@@ -158,6 +171,21 @@ export default () => [
             "numération",
             "nombre",
             "opérations",
+        ],
+    },
+    {
+        title: "Cases pour Blue-Bot (Générateur)",
+        url: "cases4bb",
+        description: `Ce générateur permet de construire des cases pour travailler avec un robot Blue-Bot comme ceux proposés par EASITYS. A vérifier, mais cela doit aussi convenir pour le Bee-Bot.`,
+        image: "cases4bb.png",
+        keywords: [
+            "Blue-Bot",
+            "cases",
+            "robot",
+            "maternelle",
+            "élémentaire",
+            "générateur",
+            "easytis",
         ],
     },
     {
@@ -683,6 +711,20 @@ export default () => [
         ],
     },
     {
+        title: "Estimer une fraction",
+        url: "Fractions/estimer",
+        description: `Outil permettant de mettre en oeuvre une séance collective au cours de laquelle les élèvs seront amenés à estimer la valeur d'une fraction représentée à l'aide de disques.`,
+        image: "estimer-fraction.png",
+        keywords: [
+            "fractions",
+            "nombre",
+            "numération",
+            "mathématiques",
+            "maths",
+            "estimer",
+        ],
+    },
+    {
         title: "Frises chronologiques",
         url: "frise",
         description: `Application web permettant de générer des images de frises chronologiques.`,
@@ -1116,6 +1158,23 @@ export default () => [
             "calcul",
             "maths",
             "mathématiques",
+        ],
+    },
+    {
+        title: "Mur sonore (Générateur de cartes)",
+        url: "mur-sonore",
+        description: `Ce générateur permet de construire des cartes pour les "murs sonores" proposés par EASITYS.`,
+        image: "mur-sonore.png",
+        keywords: [
+            "mur",
+            "sonore",
+            "langage",
+            "oral",
+            "français",
+            "maternelle",
+            "C1",
+            "générateur",
+            "easytis",
         ],
     },
     {
@@ -1740,6 +1799,23 @@ Le jeu est multijoueurs et peut donner lieu à un défi en ligne entre élèves 
         ],
     },
     {
+        title: "Tableau bavard (Générateur de grilles)",
+        url: "tableau-bavard",
+        description: `Ce générateur permet de construire des grilles pour les "Tableaux bavards" proposés par EASITYS.`,
+        image: "tableau-bavard.png",
+        keywords: [
+            "tableau",
+            "bavard",
+            "langage",
+            "oral",
+            "français",
+            "maternelle",
+            "C1",
+            "générateur",
+            "easytis",
+        ],
+    },
+    {
         title: "Tables d'addition",
         url: "TablesAddition",
         description: `Jeu interactif permettant de mémoriser les tables d'addition.`,
@@ -1878,3 +1954,4 @@ Le jeu est multijoueurs et peut donner lieu à un défi en ligne entre élèves 
         ],
     },
 ];
+export default tools;

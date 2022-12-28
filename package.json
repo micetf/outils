@@ -1,31 +1,42 @@
 {
-    "name": "outils",
+    "name": "outils-v2",
     "version": "0.1.0",
     "private": true,
     "dependencies": {
-        "@neos21/bootstrap3-glyphicons": "^1.0.4",
-        "bootstrap": "^4.4.1",
-        "node-sass": "^4.14.0",
-        "react": "^16.13.1",
-        "react-dom": "^16.13.1",
-        "react-redux": "^6.0.1",
-        "react-scripts": "2.1.8",
-        "react-tooltip-component": "^0.3.0",
+        "@neos21/bootstrap3-glyphicons": "^1.0.7",
+        "@reduxjs/toolkit": "^1.8.1",
+        "@testing-library/jest-dom": "^5.16.4",
+        "@testing-library/react": "^13.0.1",
+        "@testing-library/user-event": "^14.1.1",
+        "bootstrap": "4.6.0",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "react-redux": "^8.0.1",
+        "react-scripts": "5.0.1",
         "react-tooltip-component-16": "^0.3.2",
-        "redux": "^4.0.5"
+        "sass": "^1.57.1",
+        "web-vitals": "^2.1.0"
     },
     "scripts": {
         "start": "react-scripts start",
         "build": "react-scripts build"
     },
     "eslintConfig": {
-        "extends": "react-app"
+        "extends": [
+            "react-app",
+            "react-app/jest"
+        ]
     },
-    "homepage": "https://micetf.fr/outils",
-    "browserslist": [
-        ">0.2%",
-        "not dead",
-        "not ie <= 11",
-        "not op_mini all"
-    ]
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    }
 }
