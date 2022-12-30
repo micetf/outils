@@ -713,7 +713,7 @@ const tools = () => [
     {
         title: "Estimer une fraction",
         url: "Fractions/estimer",
-        description: `Outil permettant de mettre en oeuvre une séance collective au cours de laquelle les élèvs seront amenés à estimer la valeur d'une fraction représentée à l'aide de disques.`,
+        description: `Outil permettant de mettre en oeuvre une séance collective au cours de laquelle les élèves seront amenés à estimer la valeur d'une fraction représentée à l'aide de disques.`,
         image: "estimer-fraction.png",
         keywords: [
             "fractions",
