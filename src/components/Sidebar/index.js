@@ -6,6 +6,8 @@ import { selectTool } from "../../actions/";
 import SearchBar from "./Searchbar";
 import Link from "./Link";
 
+const removeAccents = (str) =>
+    str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
 class ToolsList extends Component {
     constructor(props) {
         super(props);
@@ -13,9 +15,9 @@ class ToolsList extends Component {
     }
 
     filterList() {
-        const term = this.props.term.toLowerCase();
-        return this.props.tools.filter(tool => {
-            const keywords = tool.keywords;
+        const term = removeAccents(this.props.term.toLowerCase());
+        return this.props.tools.filter((tool) => {
+            const keywords = tool.keywords.map(removeAccents);
             return keywords.reduce((ok, keyword) => {
                 return ok || keyword.indexOf(term) === 0;
             }, false);
@@ -23,7 +25,7 @@ class ToolsList extends Component {
     }
 
     renderList(tools) {
-        return tools.map(tool => {
+        return tools.map((tool) => {
             return (
                 <Tooltip
                     key={tool.url}
@@ -64,12 +66,9 @@ class ToolsList extends Component {
     }
 }
 
-const mapStateToProps = state => ({
+const mapStateToProps = (state) => ({
     tools: state.toolsList,
     term: state.searchTerm,
 });
 
-export default connect(
-    mapStateToProps,
-    { selectTool }
-)(ToolsList);
+export default connect(mapStateToProps, { selectTool })(ToolsList);

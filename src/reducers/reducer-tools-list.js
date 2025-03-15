@@ -5,7 +5,7 @@ const tools = () => [
         description:
             "Abaque virtuel permettant de travailler la numération à l'école primaire.",
         image: "abaque.png",
-        keywords: ["abaque", "maths", "mathématique", "numération", "nombre"],
+        keywords: ["abaque", "maths", "mathématiques", "numération", "nombre"],
     },
     {
         title: "Abaques-taquins",
@@ -13,7 +13,7 @@ const tools = () => [
         description:
             "Jeu interactif dont le but est de déplacer les boules d'un abaque de départ pour obtenir la même disposition que sur un abaque d'arrivée.",
         image: "abaques-taquins.png",
-        keywords: ["abaques-taquins", "maths", "mathématique"],
+        keywords: ["abaques-taquins", "maths", "mathématiques"],
     },
     {
         title: "Acrostiches",
@@ -27,14 +27,20 @@ const tools = () => [
         url: "addigrille",
         description: `Application web permettant de travailler le calcul à l'école primaire en réalisant des Addi-Grilles en ligne.`,
         image: "addigrille.png",
-        keywords: ["addi-grilles", "calcul", "maths", "mathématique"],
+        keywords: ["addi-grilles", "calcul", "maths", "mathématiques"],
     },
     {
         title: "Additions",
         url: "addition",
         description: `Application web permettant de s'exercer au calcul de sommes d'entiers inférieurs à 10.`,
         image: "additions.png",
-        keywords: ["additions", "calcul", "maths", "mathématique", "opération"],
+        keywords: [
+            "additions",
+            "calcul",
+            "maths",
+            "mathématiques",
+            "opération",
+        ],
     },
     {
         title: "Agamographe",
@@ -77,7 +83,7 @@ const tools = () => [
         keywords: [
             "angles",
             "maths",
-            "mathématique",
+            "mathématiques",
             "générateur",
             "géométrie",
         ],
@@ -156,7 +162,7 @@ const tools = () => [
             "mathématiques",
             "numération",
             "nombre",
-            "opérations",
+            "opération",
         ],
     },
     {
@@ -170,7 +176,7 @@ const tools = () => [
             "mathématiques",
             "numération",
             "nombre",
-            "opérations",
+            "opération",
         ],
     },
     {
@@ -220,7 +226,7 @@ const tools = () => [
             "mathématiques",
             "numération",
             "nombre",
-            "opérations",
+            "opération",
         ],
     },
     {
@@ -457,7 +463,7 @@ const tools = () => [
     {
         title: "Dénombrement",
         url: "Denombrement",
-        description: `Application web permettant de travailler les écritures et les représentations des nombres décimaux.`,
+        description: `Application web permettant de s'exercer au dénombrement de petites quantités.`,
         image: "denombrement.png",
         keywords: [
             "dénombrement",
@@ -597,8 +603,8 @@ const tools = () => [
         image: "estimheure.png",
         keywords: [
             "estimation",
-            "math",
-            "mathématique",
+            "maths",
+            "mathématiques",
             "heure",
             "minute",
             "grandeur",
@@ -1119,13 +1125,11 @@ const tools = () => [
         image: "modelisation-rdp.png",
         keywords: [
             "générateur",
-            "resolution de problemes",
-            "résolution de problèmes",
+            "résolution",
+            "problème",
             "rdp",
             "modélisation",
             "schéma",
-            "schema",
-            "modele",
             "modèle",
             "barre",
             "maths",
@@ -1254,7 +1258,7 @@ Pour utiliser une palette de couleurs différente pour la repésentation en cube
         keywords: [
             "numop",
             "numération",
-            "opérations",
+            "opération",
             "nombres",
             "maths",
             "mathématiques",
@@ -1283,12 +1287,12 @@ Pour utiliser une palette de couleurs différente pour la repésentation en cube
         ],
     },
     {
-        title: "Opérations",
+        title: "opération",
         url: "operations",
         description: `Banque d'outils permettant de générer au format pdf et d'imprimer des fiches d'exercices proposant des séries d'opérations posées.`,
         image: "operations.png",
         keywords: [
-            "opérations",
+            "opération",
             "calcul",
             "posé",
             "maths",
@@ -1323,8 +1327,8 @@ Pour utiliser une palette de couleurs différente pour la repésentation en cube
             "ranger",
             "croissant",
             "décroissant",
-            "math",
-            "mathématique",
+            "maths",
+            "mathématiques",
             "numération",
         ],
     },
@@ -1376,6 +1380,9 @@ Pour utiliser une palette de couleurs différente pour la repésentation en cube
             "décimale",
             "maths",
             "mathématiques",
+            "graduée",
+            "ligne",
+            "graduation",
         ],
     },
     {
@@ -1390,6 +1397,9 @@ Pour utiliser une palette de couleurs différente pour la repésentation en cube
             "numération",
             "maths",
             "mathématiques",
+            "graduée",
+            "ligne",
+            "graduation",
         ],
     },
     {
@@ -1404,7 +1414,14 @@ Pour utiliser une palette de couleurs différente pour la repésentation en cube
         url: "pareil-pas-pareil",
         description: `Jeu interactif permettant de s'exercer, d'une part, à reconnaître si deux formes planes sont superposables ou non et, d'autre part, à distinguer entre superposition directe et superposition après retournement. `,
         image: "pareil-pas-pareil.png",
-        keywords: ["pareil", "géométrie", "math", "superposable", "forme"],
+        keywords: [
+            "pareil",
+            "géométrie",
+            "maths",
+            "mathématiques",
+            "superposable",
+            "forme",
+        ],
     },
     {
         title: "Parking",
@@ -1427,7 +1444,14 @@ Pour utiliser une palette de couleurs différente pour la repésentation en cube
         url: "pense",
         description: `Jeu interactif dont le but est de retrouver le plus rapidement possible un nombre mystérieux. A chaque proposition, l'application répond par "Trop petit" ou "Trop grand".`,
         image: "pense.png",
-        keywords: ["numération", "nombres", "maths", "mathématiques", "pensé"],
+        keywords: [
+            "numération",
+            "nombres",
+            "maths",
+            "mathématiques",
+            "pensé",
+            "nombre",
+        ],
     },
     {
         title: "Phonologie",
@@ -1724,8 +1748,8 @@ Le jeu est multijoueurs et peut donner lieu à un défi en ligne entre élèves 
         image: "soixante.png",
         keywords: [
             "soixante",
-            "math",
-            "mathématique",
+            "maths",
+            "mathématiques",
             "calcul",
             "mental",
             "heure",
