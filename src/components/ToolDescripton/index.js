@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import { connect } from "react-redux";
+import { getFullThumbnailPath } from "micetf-data";
 
 const ToolDescription = (props) => {
     const embed = useRef(null);
@@ -22,7 +23,10 @@ const ToolDescription = (props) => {
             height="735" frameborder="0" &gt;&lt;/iframe&gt;
         </code>
     );
-    const { title, url, image, description } = props.tool;
+    const { title, url, thumbnail, description } = props.tool;
+
+    const thumbnailUrl = getFullThumbnailPath(thumbnail);
+    console.log(props.tool);
     return (
         <div className="col-sm-8">
             <div className="card text-center">
@@ -37,9 +41,9 @@ const ToolDescription = (props) => {
                         title="Accéder à l'outil..."
                     >
                         <img
-                            src={`./thumbnails/${image}`}
-                            alt={image}
-                            className="img-fluid"
+                            src={thumbnailUrl}
+                            alt={title}
+                            className="img-fluid w-100"
                         />
                     </a>
                 </div>
