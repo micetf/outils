@@ -6,9 +6,11 @@
     "dependencies": {
         "@reduxjs/toolkit": "^1.8.1",
         "micetf-data": "github:micetf/micetf-data#v1.0.10",
+        "prop-types": "^15.8.1",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
-        "react-redux": "^8.0.1"
+        "react-redux": "^8.0.1",
+        "react-tooltip": "^5.28.0"
     },
     "devDependencies": {
         "@vitejs/plugin-react": "^4.2.0",
