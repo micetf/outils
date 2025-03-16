@@ -1,7 +1,11 @@
-// src/components/Navbar/index.js
 import React from "react";
 
-export default () => {
+/**
+ * Composant Navbar amélioré avec Tailwind CSS
+ * Focus sur l'amélioration du bouton de la liste alphabétique
+ * @returns {JSX.Element} Composant rendu
+ */
+const Navbar = () => {
     // Construction de l'email avec prévention anti-spam
     const emailParts = [
         "mailto:",
@@ -80,19 +84,26 @@ export default () => {
                     />
                 </form>
 
-                {/* Bouton index */}
+                {/* Bouton index - VERSION AMÉLIORÉE */}
                 <a
                     href="https://micetf.fr/index/"
-                    className="bg-gray-600 p-2 rounded hover:bg-gray-700 transition-colors"
-                    title="Liste des outils rangés par ordre alphabétique"
+                    className="group relative flex items-center gap-2 rounded bg-blue-600 hover:bg-blue-700 px-3 py-2 text-white transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                    title="Liste alphabétique des outils"
                 >
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"
                         className="h-5 w-5 fill-current"
                     >
-                        <path d="M12.9 14.32a8 8 0 1 1 1.41-1.41l5.35 5.33-1.42 1.42-5.33-5.34zM8 14A6 6 0 1 0 8 2a6 6 0 0 0 0 12z"></path>
+                        <path d="M2 4a1 1 0 011-1h2a1 1 0 011 1v12a1 1 0 01-1 1H3a1 1 0 01-1-1V4zm6 0a1 1 0 011-1h2a1 1 0 011 1v12a1 1 0 01-1 1H9a1 1 0 01-1-1V4zm7-1a1 1 0 00-1 1v12a1 1 0 001 1h2a1 1 0 001-1V4a1 1 0 00-1-1h-2z" />
                     </svg>
+                    <span className="hidden md:inline-block">Index A-Z</span>
+
+                    {/* Tooltip au survol */}
+                    <div className="absolute -bottom-12 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 bg-gray-900 text-white text-xs rounded px-2 py-1 min-w-max pointer-events-none">
+                        Liste alphabétique des outils
+                        <div className="absolute -top-1 left-1/2 transform -translate-x-1/2 border-4 border-transparent border-b-gray-900"></div>
+                    </div>
                 </a>
 
                 {/* Mobile Menu Button */}
@@ -129,10 +140,17 @@ export default () => {
                 </a>
                 <a
                     href="https://micetf.fr/index/"
-                    className="px-4 py-2 hover:bg-gray-700 transition-colors"
+                    className="px-4 py-2 hover:bg-gray-700 transition-colors flex items-center gap-2"
                     title="Liste des outils rangés par ordre alphabétique"
                 >
-                    Liste des outils
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        className="h-5 w-5 fill-current"
+                    >
+                        <path d="M2 4a1 1 0 011-1h2a1 1 0 011 1v12a1 1 0 01-1 1H3a1 1 0 01-1-1V4zm6 0a1 1 0 011-1h2a1 1 0 011 1v12a1 1 0 01-1 1H9a1 1 0 01-1-1V4zm7-1a1 1 0 00-1 1v12a1 1 0 001 1h2a1 1 0 001-1V4a1 1 0 00-1-1h-2z" />
+                    </svg>
+                    Liste alphabétique
                 </a>
                 <a
                     href={emailContact}
@@ -145,3 +163,5 @@ export default () => {
         </nav>
     );
 };
+
+export default Navbar;
