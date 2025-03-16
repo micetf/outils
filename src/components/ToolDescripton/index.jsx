@@ -1,3 +1,4 @@
+// src/components/ToolDescripton/index.js
 import React, { useRef } from "react";
 import { connect } from "react-redux";
 import { getFullThumbnailPath } from "micetf-data";
@@ -9,24 +10,26 @@ const ToolDescription = (props) => {
         e.preventDefault();
         navigator.clipboard.writeText(embed.current.textContent);
     };
+
     if (!props.tool) {
         return (
-            <h3 className="text-center alert alert-warning">
-                <span className="glyphicon glyphicon-arrow-left" /> Choisis un
-                outil.
+            <h3 className="alert alert-warning text-center">
+                <span className="glyphicon glyphicon-arrow-left"></span> Choisis
+                un outil.
             </h3>
         );
     }
+
     const embeded = (url) => (
-        <code className="clearfix" ref={embed} title="Code d'intégration">
+        <code className="clearfix block" ref={embed} title="Code d'intégration">
             &lt;iframe src="{`https://micetf.fr/${url}`}" width="980"
             height="735" frameborder="0" &gt;&lt;/iframe&gt;
         </code>
     );
-    const { title, url, thumbnail, description } = props.tool;
 
+    const { title, url, thumbnail, description } = props.tool;
     const thumbnailUrl = getFullThumbnailPath(thumbnail);
-    console.log(props.tool);
+    console.log(thumbnailUrl);
     return (
         <div className="col-sm-8">
             <div className="card text-center">
@@ -48,7 +51,7 @@ const ToolDescription = (props) => {
                     </a>
                 </div>
                 <div className="card-footer text-justify">
-                    <div className=" mb-2">
+                    <div className="mb-2">
                         {description} (
                         <a
                             href={`https://micetf.fr/${url}`}

@@ -1,13 +1,32 @@
-import React, { Component } from "react";
-import Tooltip from "react-tooltip-component-16";
+import React, { Component, useState } from "react";
 import { connect } from "react-redux";
-import "react-tooltip-component-16/lib/tooltip.css";
 import { selectTool } from "../../actions/";
 import SearchBar from "./Searchbar";
 import Link from "./Link";
 
+// Composant Tooltip personnalisé
+const CustomTooltip = ({ title, children }) => {
+    const [showTooltip, setShowTooltip] = useState(false);
+
+    return (
+        <div
+            className="relative"
+            onMouseEnter={() => setShowTooltip(true)}
+            onMouseLeave={() => setShowTooltip(false)}
+        >
+            {children}
+            {showTooltip && (
+                <div className="absolute left-0 transform -translate-x-full top-0 bg-gray-800 text-white text-xs rounded py-1 px-2 z-50 w-max max-w-xs">
+                    {title}
+                </div>
+            )}
+        </div>
+    );
+};
+
 const removeAccents = (str) =>
     str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+
 class ToolsList extends Component {
     constructor(props) {
         super(props);
@@ -27,11 +46,7 @@ class ToolsList extends Component {
     renderList(tools) {
         return tools.map((tool) => {
             return (
-                <Tooltip
-                    key={tool.url}
-                    title={tool.keywords.join(", ")}
-                    position="left"
-                >
+                <CustomTooltip key={tool.url} title={tool.keywords.join(", ")}>
                     <li className="list-group-item">
                         <Link
                             url="#"
@@ -40,10 +55,11 @@ class ToolsList extends Component {
                             {tool.title}
                         </Link>
                     </li>
-                </Tooltip>
+                </CustomTooltip>
             );
         });
     }
+
     render() {
         const tools = this.filterList();
 
@@ -54,7 +70,9 @@ class ToolsList extends Component {
                         <SearchBar />
                         <h6 className="card-subtitle my-2">
                             {`Nombre d'outils : `}
-                            <span className="badge">{tools.length}</span>
+                            <span className="badge bg-white text-blue-500">
+                                {tools.length}
+                            </span>
                         </h6>
                     </div>
                     <ul className="list-tools list-group card-body">

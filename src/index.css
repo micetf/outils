@@ -1,0 +1,366 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        padding-top: 70px;
+        background-color: #f5f3ee;
+    }
+}
+
+@layer components {
+    .search-bar {
+        margin: 1.25rem;
+        text-align: center;
+    }
+
+    .search-bar input {
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    .list-group-item {
+        cursor: pointer;
+    }
+
+    .list-group-item:hover {
+        background-color: #eee;
+    }
+
+    ul.list-tools {
+        overflow: auto;
+        height: 440px;
+    }
+
+    /* Équivalents Navbar Bootstrap */
+    .navbar {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.5rem 1rem;
+    }
+
+    .navbar-dark {
+        background-color: #343a40;
+        color: white;
+    }
+
+    .navbar-brand {
+        font-size: 1.25rem;
+        font-weight: 600;
+    }
+
+    .navbar-toggler {
+        display: block;
+        padding: 0.5rem;
+        border-radius: 0.25rem;
+        border: 1px solid #6c757d;
+    }
+
+    .navbar-expand-xl {
+        flex-direction: column;
+    }
+
+    @media (min-width: 1200px) {
+        .navbar-expand-xl {
+            flex-direction: row;
+        }
+    }
+
+    .navbar-nav {
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
+        margin-bottom: 0;
+    }
+
+    @media (min-width: 1200px) {
+        .navbar-nav {
+            flex-direction: row;
+        }
+    }
+
+    .nav-item {
+        list-style: none;
+    }
+
+    .nav-link {
+        display: block;
+        padding: 0.5rem 0.75rem;
+    }
+
+    .nav-link:hover {
+        opacity: 0.75;
+    }
+
+    /* Équivalents de Card Bootstrap */
+    .card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: white;
+        border: 1px solid #e2e8f0;
+        border-radius: 0.375rem;
+    }
+
+    .card-header {
+        padding: 0.75rem 1rem;
+        border-bottom: 1px solid #e2e8f0;
+    }
+
+    .card-body {
+        flex: 1 1 auto;
+        padding: 1rem;
+    }
+
+    .card-footer {
+        padding: 0.75rem 1rem;
+        border-top: 1px solid #e2e8f0;
+    }
+
+    .card-title {
+        margin-bottom: 0;
+        color: #2d3748;
+        font-weight: 500;
+    }
+
+    .card-subtitle {
+        margin-top: 0.25rem;
+        color: #4a5568;
+    }
+
+    /* Équivalents de Bootstrap Utilities */
+    .text-center {
+        text-align: center;
+    }
+
+    .text-left {
+        text-align: left;
+    }
+
+    .text-right {
+        text-align: right;
+    }
+
+    .text-justify {
+        text-align: justify;
+    }
+
+    .bg-primary {
+        background-color: #3b82f6;
+        color: white;
+    }
+
+    .bg-info {
+        background-color: #60a5fa;
+        color: white;
+    }
+
+    .bg-dark {
+        background-color: #1f2937;
+        color: white;
+    }
+
+    .bg-warning {
+        background-color: #fbbf24;
+        color: white;
+    }
+
+    .my-1 {
+        margin-top: 0.25rem;
+        margin-bottom: 0.25rem;
+    }
+
+    .my-2 {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .my-4 {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .mx-auto {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .p-1 {
+        padding: 0.25rem;
+    }
+
+    .p-2 {
+        padding: 0.5rem;
+    }
+
+    .mb-2 {
+        margin-bottom: 0.5rem;
+    }
+
+    .mt-1 {
+        margin-top: 0.25rem;
+    }
+
+    .mr-2 {
+        margin-right: 0.5rem;
+    }
+
+    .border {
+        border-width: 1px;
+    }
+
+    .border-secondary {
+        border-color: #9ca3af;
+    }
+
+    .float-right {
+        float: right;
+    }
+
+    .w-100 {
+        width: 100%;
+    }
+
+    .rounded-top {
+        border-top-left-radius: 0.375rem;
+        border-top-right-radius: 0.375rem;
+    }
+
+    .btn {
+        display: inline-block;
+        font-weight: 500;
+        text-align: center;
+        vertical-align: middle;
+        padding: 0.5rem 1rem;
+        border-radius: 0.25rem;
+        transition-property: color, background-color;
+        transition-duration: 200ms;
+    }
+
+    .btn-warning {
+        background-color: #fbbf24;
+        color: white;
+    }
+
+    .btn-warning:hover {
+        background-color: #f59e0b;
+    }
+
+    .btn-outline-dark {
+        border: 1px solid #1f2937;
+        color: #1f2937;
+    }
+
+    .btn-outline-dark:hover {
+        background-color: #1f2937;
+        color: white;
+    }
+
+    .collapse {
+        display: none;
+    }
+
+    .collapse.show {
+        display: block;
+    }
+
+    /* Équivalents de la grille Bootstrap */
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    @media (min-width: 640px) {
+        .container {
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .container {
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -1rem;
+        margin-right: -1rem;
+    }
+
+    .col-sm-4 {
+        width: 100%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    @media (min-width: 640px) {
+        .col-sm-4 {
+            width: 33.333333%;
+        }
+    }
+
+    .col-sm-8 {
+        width: 100%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    @media (min-width: 640px) {
+        .col-sm-8 {
+            width: 66.666667%;
+        }
+    }
+
+    /* Équivalents des badges et alertes */
+    .badge {
+        display: inline-block;
+        padding: 0.25rem 0.5rem;
+        font-size: 0.75rem;
+        font-weight: 600;
+        border-radius: 9999px;
+    }
+
+    .alert {
+        padding: 1rem;
+        margin-bottom: 1rem;
+        border-radius: 0.375rem;
+    }
+
+    .alert-warning {
+        background-color: #fef3c7;
+        border: 1px solid #fbbf24;
+        color: #92400e;
+    }
+
+    /* Liste Bootstrap */
+    .list-group {
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
+        margin-bottom: 0;
+        border-radius: 0.375rem;
+        border: 1px solid #e2e8f0;
+    }
+
+    .list-group-item {
+        position: relative;
+        display: block;
+        padding: 0.5rem 1rem;
+        border-bottom: 1px solid #e2e8f0;
+    }
+
+    .list-group-item:last-child {
+        border-bottom: 0;
+    }
+}

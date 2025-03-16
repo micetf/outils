@@ -9,7 +9,14 @@
 /coverage
 
 # production
+/dist
 /build
+
+# Assets générés
+/public/thumbnails/
+/public/assets/
+/public/media/
+/assets/thumbnails/
 
 # misc
 .DS_Store
