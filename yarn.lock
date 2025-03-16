@@ -838,9 +838,9 @@ merge2@^1.3.0:
   resolved "https://registry.npmjs.org/merge2/-/merge2-1.4.1.tgz"
   integrity sha512-8q7VEgMJW4J8tcfVPy8g09NcQwZdbwFEqhe/WZkoIzjn/3TGDwtOCYtXGxA3O8tPzpczCCDgv+P2P5y00ZJOOg==
 
-"micetf-data@github:micetf/micetf-data#v1.0.9":
+"micetf-data@github:micetf/micetf-data#v1.0.10":
   version "1.0.9"
-  resolved "git+ssh://git@github.com/micetf/micetf-data.git#8d12751fb636bddbaf7a117faa1836e057ee5cfc"
+  resolved "git+ssh://git@github.com/micetf/micetf-data.git#3ab50d6bb7cae4fccac7f95247cc6b6f24b9515f"
 
 micromatch@^4.0.8:
   version "4.0.8"

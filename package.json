@@ -5,7 +5,7 @@
     "author": "Frédéric MISERY <webmaster@micetf.fr> (https://micetf.fr/)",
     "dependencies": {
         "@reduxjs/toolkit": "^1.8.1",
-        "micetf-data": "github:micetf/micetf-data#v1.0.9",
+        "micetf-data": "github:micetf/micetf-data#v1.0.10",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
         "react-redux": "^8.0.1"
